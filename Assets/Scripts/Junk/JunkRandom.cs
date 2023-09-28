@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JunkRandom : MyUpdateMonoBehaviour
 {
-    [SerializeField] protected JunkController junkController;
+    [SerializeField] protected JunkSpawnerController junkController;
 
     protected override void LoadComponents()
     {
@@ -15,7 +15,7 @@ public class JunkRandom : MyUpdateMonoBehaviour
     protected virtual void LoadJunkController()
     {
         if (this.junkController != null) return;
-        this.junkController = GetComponent<JunkController>();
+        this.junkController = GetComponent<JunkSpawnerController>();
         Debug.Log(transform.name + ": Load JunkController", gameObject);
     }
 

@@ -321,7 +321,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 163167199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3810c42e610db349b90ad8af2b0011e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9306926f2e9fb7340b3a000a9c07098b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   junkSpawner: {fileID: 163167203}
@@ -451,6 +451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 1
   direction: {x: 1, y: 0, z: 0}
+  minCamPos: -16
+  maxCamPos: 16
 --- !u!1 &384438133
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 429593677}
+  - component: {fileID: 429593678}
   m_Layer: 0
   m_Name: Meteorite_1
   m_TagString: Untagged
@@ -610,6 +613,19 @@ Transform:
   m_Father: {fileID: 1967588451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429593678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429593676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3810c42e610db349b90ad8af2b0011e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 1420983981}
 --- !u!1 &464528434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,8 +1096,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1945170820}
+  - component: {fileID: 1945170821}
   m_Layer: 0
-  m_Name: Rotate
+  m_Name: JunkRotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1102,6 +1119,20 @@ Transform:
   m_Father: {fileID: 429593677}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945170821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945170819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423a742fcfb59344c86e70781dfbfcd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  junkController: {fileID: 429593678}
+  speed: 9
 --- !u!1 &1967588450
 GameObject:
   m_ObjectHideFlags: 0
