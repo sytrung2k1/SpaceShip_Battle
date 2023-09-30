@@ -17,6 +17,12 @@ public class DamageReceiver : MyUpdateMonoBehaviour
         this.Reborn();
     }
 
+    protected override void ResetValue()
+    {
+        base.ResetValue();
+        this.Reborn();
+    }
+
     protected override void LoadComponents()
     {
         base.LoadComponents();

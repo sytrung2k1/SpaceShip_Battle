@@ -33,6 +33,6 @@ public class JunkFly : ParentObjFly
         transform.parent.rotation = Quaternion.Euler(0f, 0f, rot_z);
 
 
-        Debug.DrawLine(objPos, camPos + diff * 3, Color.red, Mathf.Infinity);
+        //Debug.DrawLine(objPos, camPos + diff * 3, Color.red, Mathf.Infinity);
     }
 }
