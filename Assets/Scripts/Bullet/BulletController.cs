@@ -10,6 +10,9 @@ public class BulletController : MyUpdateMonoBehaviour
     [SerializeField] protected BulletDespawn bulletDespawn;
     public BulletDespawn BulletDespawn { get { return bulletDespawn; } }
 
+    //[SerializeField] protected Transform shooter;
+    //public Transform Shooter => shooter;
+
     protected override void LoadComponents()
     {
         base.LoadComponents();
@@ -30,4 +33,10 @@ public class BulletController : MyUpdateMonoBehaviour
         this.bulletDespawn = transform.GetComponentInChildren<BulletDespawn>();
         Debug.Log(transform.name + ": Load BulletDespawn", gameObject);
     }
+    /*
+    public virtual void SetShooter(Transform shooter)
+    {
+        this.shooter = shooter;
+    }
+    */
 }
